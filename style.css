@@ -1,3 +1,5 @@
+@import "slider.css"; 
+
 * {
     margin: 0;
     padding: 0;
@@ -44,20 +46,19 @@ path, i, svg {
     flex-direction: column;
     position: absolute;
     bottom: 0%;
-    background: rgba(255, 255, 255);
-    opacity: 0;
+    background: rgb(255, 255, 255);
+    /* opacity: 0; */
     padding: 1rem;
     width: 80%;
-    pointer-events: none;
+    /* pointer-events: none; */
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-
     /*We are adding an adjust class*/
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
     transition: all 0.5s ease-in-out;
 }
 
-.sliders.active{
+.sliders.active {
     opacity: 1;
     transform: translateY(0px);
     pointer-events: all;
@@ -65,7 +66,7 @@ path, i, svg {
 
 .sliders button {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     padding: 0.5rem;
     border-top-left-radius: 1rem;
@@ -75,22 +76,21 @@ path, i, svg {
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;
-
 }
 
-.controls{
+.controls {
     display: flex;
     flex-direction: column;
 }
 
-.panel{
+.panel {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 20vh;
 }
 
-.panel button{
+.panel button {
     font-size: 1.2rem;
     margin: 1rem;
     padding: 1rem 2rem;
@@ -101,21 +101,22 @@ path, i, svg {
     border-radius: 1rem;
 }
 
-.panel p{
+.panel p {
     font-size: 1.2rem;
-
 }
 
-.library-panel,.generate-panel,.save-panel{
+.library-panel, .generate-panel, .save-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.adjust,.lock{
+.adjust, .lock {
     font-size: 2rem;
     border: none;
     background: none;
     cursor: pointer;
     margin: 2rem 0rem;
 }
+
+/* Slider Stuff */
